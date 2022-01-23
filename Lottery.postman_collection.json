@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "281c4595-c036-4d4b-aa78-f1cc7c0ceabb",
+		"name": "Lottery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start System",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-INTERNAL-API-KEY",
+						"value": "internal-api-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"draw_interval\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/internal/start_system",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"internal",
+						"start_system"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status System",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-INTERNAL-API-KEY",
+						"value": "internal-api-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/internal/status_system",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"internal",
+						"status_system"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Draw History",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-INTERNAL-API-KEY",
+						"value": "internal-api-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/internal/draw_history",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"internal",
+						"draw_history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Ticket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CONTESTANT-API-KEY",
+						"value": "b-api-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/public/buy_ticket",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"buy_ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Ticket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CONTESTANT-API-KEY",
+						"value": "b-api-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/public/status_ticket",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"status_ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Tickets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CONTESTANT-API-KEY",
+						"value": "c-api-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:3456/api/v1/public/my_tickets",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"my_tickets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

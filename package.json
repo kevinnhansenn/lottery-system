@@ -1,0 +1,27 @@
+{
+  "name": "GOGOX",
+  "version": "1.0.0",
+  "description": "Lottery system",
+  "main": "index.js",
+  "repository": "https://github.com/kevinnhansenn/lottery-system",
+  "author": "Kevin Hansen",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --watch",
+    "start": "jest && node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "redoc-express": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2"
+  }
+}
